@@ -33,6 +33,8 @@ type DubboProxyConfig struct {
 	AutoResolve bool `yaml:"auto_resolve" json:"auto_resolve,omitempty"`
 	// Protoset path to load protoset files
 	Protoset []string `yaml:"protoset" json:"protoset,omitempty"`
-	// Load
+	// Load   load balance
 	LoadBalance string `yaml:"load_balance"  json:"load_balance,omitempty"`
+	// Retries number of retries
+	Retries string `yaml:"retries" json:"retries,omitempty"`
 }

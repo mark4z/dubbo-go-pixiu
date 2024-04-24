@@ -319,12 +319,15 @@ func (dc *Client) create(key string, irequest fc.IntegrationRequest) *generic.Ge
 		Version:       irequest.DubboBackendConfig.Version,
 		Group:         irequest.Group,
 		Loadbalance:   dc.dubboProxyConfig.LoadBalance,
+		Retries:       dc.dubboProxyConfig.Retries,
 	}
 
-	if len(irequest.DubboBackendConfig.Retries) == 0 {
-		refConf.Retries = "3"
-	} else {
-		refConf.Retries = irequest.DubboBackendConfig.Retries
+	if refConf.Retries == "" {
+		if len(irequest.DubboBackendConfig.Retries) == 0 {
+			refConf.Retries = "3"
+		} else {
+			refConf.Retries = irequest.DubboBackendConfig.Retries
+		}
 	}
 
 	if dc.dubboProxyConfig.Timeout != nil {
