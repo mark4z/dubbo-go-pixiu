@@ -20,8 +20,6 @@ require (
 	github.com/ghodss/yaml v1.0.1-0.20190212211648-25d852aebe32
 	github.com/go-errors/errors v1.0.1
 	github.com/go-playground/assert/v2 v2.0.1
-	github.com/go-resty/resty/v2 v2.7.0
-	github.com/gogo/protobuf v1.3.2
 	github.com/goinggo/mapstructure v0.0.0-20140717182941-194205d9b4a9
 	github.com/golang-jwt/jwt/v4 v4.4.2
 	github.com/golang/mock v1.6.0
@@ -30,7 +28,6 @@ require (
 	github.com/jhump/protoreflect v1.9.0
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/nacos-group/nacos-sdk-go v1.1.3
-	github.com/opentrx/seata-golang/v2 v2.0.5
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.14.0
 	github.com/prometheus/common v0.37.0
@@ -54,7 +51,6 @@ require (
 	google.golang.org/protobuf v1.30.0
 	gopkg.in/yaml.v2 v2.4.0
 	mosn.io/proxy-wasm-go-host v0.1.0
-	vimagination.zapto.org/byteio v0.0.0-20200222190125-d27cba0f0b10
 )
 
 require (
@@ -87,6 +83,7 @@ require (
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
 	github.com/go-playground/validator/v10 v10.11.0 // indirect
+	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/uuid v1.3.0 // indirect
@@ -146,5 +143,4 @@ require (
 	gopkg.in/ini.v1 v1.51.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	vimagination.zapto.org/memio v1.0.0 // indirect
 )
