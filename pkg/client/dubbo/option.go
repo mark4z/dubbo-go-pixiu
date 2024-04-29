@@ -155,7 +155,7 @@ func (opt *valuesOpt) Action(target, val interface{}) error {
 	}
 	if val, vok := v[0].([]interface{}); vok {
 		toVals = val
-	} else {
+	} else if val, ok := v[0].(string); !ok || val != "" {
 		toVals = []interface{}{v[0]}
 	}
 	if !(len(toTypes) != 0 && len(toTypes) == len(toVals)) {
