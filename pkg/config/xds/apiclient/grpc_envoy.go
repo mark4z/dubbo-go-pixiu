@@ -19,7 +19,6 @@ package apiclient
 
 import (
 	"context"
-	"github.com/apache/dubbo-go-pixiu/pkg/logger"
 	"os"
 	"time"
 )
@@ -41,6 +40,7 @@ import (
 )
 
 import (
+	"github.com/apache/dubbo-go-pixiu/pkg/logger"
 	"github.com/apache/dubbo-go-pixiu/pkg/model"
 )
 
